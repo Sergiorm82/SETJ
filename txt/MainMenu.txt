@@ -1,0 +1,112 @@
+import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.*;
+import java.awt.*;
+
+public class MainMenu extends JFrame {
+
+    public MainMenu() {
+        // Configuración de FlatLaf para el tema moderno
+        FlatLightLaf.setup();
+
+        // Configuración básica del JFrame
+        setTitle("SETJ - Menú Principal");
+        setSize(400, 500); // Tamaño del frame
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null); // Centrar la ventana
+        setResizable(false); // No permitir redimensionar
+        
+        // Agregar el favicon
+        setFavicon("C:\\Users\\SRUIZ\\Documents\\NetBeansProjects\\SET\\favicon.png");
+
+        // Crear el panel principal
+        JPanel mainPanel = new JPanel();
+        mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        add(mainPanel);
+
+        // Agregar el logotipo
+        JLabel logoLabel = new JLabel();
+        logoLabel.setAlignmentX(CENTER_ALIGNMENT);
+
+        // Ruta al logotipo
+        ImageIcon logoIcon = new ImageIcon("C:\\Users\\SRUIZ\\Documents\\NetBeansProjects\\SET\\SETJ_LOGO.png");
+        Image scaledImage = logoIcon.getImage().getScaledInstance(300, 100, Image.SCALE_SMOOTH);
+        logoLabel.setIcon(new ImageIcon(scaledImage));
+        mainPanel.add(logoLabel);
+        mainPanel.add(Box.createRigidArea(new Dimension(0, 20))); // Espaciado
+
+        // Botones modernos para el menú
+        String[] buttonLabels = {
+            "Inventario",
+            "Validación",
+            "Asignación",
+            "Afectación",
+            "Módulo de consulta y reporte 1",
+            "Módulo de consulta y reporte 2"
+        };
+
+        for (String label : buttonLabels) {
+            JButton button = new JButton(label);
+            button.setFocusPainted(false); // Quitar el foco del botón
+            button.setPreferredSize(new Dimension(300, 50));
+            button.setMaximumSize(new Dimension(300, 50));
+            button.setAlignmentX(CENTER_ALIGNMENT);
+
+            // Asignar acción específica a cada botón
+            button.addActionListener(e -> performAction(label));
+
+            mainPanel.add(button);
+            mainPanel.add(Box.createRigidArea(new Dimension(0, 10))); // Espaciado entre botones
+        }
+
+        // Mostrar el JFrame
+        setVisible(true);
+    }
+
+    private void performAction(String action) {
+        switch (action) {
+            case "Inventario":
+                JOptionPane.showMessageDialog(this, "Abriendo módulo de Inventario...");
+                // Aquí puedes agregar código para abrir la ventana de Inventario
+                break;
+            case "Validación":
+                JOptionPane.showMessageDialog(this, "Abriendo módulo de Validación...");
+                // Código para abrir la ventana de Validación
+                break;
+            case "Asignación":
+                JOptionPane.showMessageDialog(this, "Abriendo módulo de Asignación...");
+                // Código para abrir la ventana de Asignación
+                break;
+            case "Afectación":
+                JOptionPane.showMessageDialog(this, "Abriendo módulo de Afectación...");
+                // Código para abrir la ventana de Afectación
+                break;
+            case "Módulo de consulta y reporte 1":
+                JOptionPane.showMessageDialog(this, "Abriendo módulo de consulta y reporte 1...");
+                // Código para abrir el módulo de consulta 1
+                break;
+            case "Módulo de consulta y reporte 2":
+                JOptionPane.showMessageDialog(this, "Abriendo módulo de consulta y reporte 2...");
+                // Código para abrir el módulo de consulta 2
+                break;
+            default:
+                JOptionPane.showMessageDialog(this, "Opción no reconocida: " + action);
+                break;
+        }
+    }
+
+    private void setFavicon(String path) {
+        try {
+            // Cargar la imagen del favicon
+            ImageIcon icon = new ImageIcon(path);
+            Image image = icon.getImage();
+            setIconImage(image); // Asignar la imagen como ícono
+        } catch (Exception e) {
+            System.err.println("Error al cargar el favicon: " + e.getMessage());
+        }
+    }
+    
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new MainMenu());
+    }
+}

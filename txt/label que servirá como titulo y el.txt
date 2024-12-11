@@ -1,0 +1,42 @@
+label que servirá como titulo y el titulo será "Captura todos los campos requeridos"
+crear Label ID y su jtextfiel - que sera tomado del siguiente consecutivo del ultimo idmovimiento encontrado en la tabla creditosfiscales de la base de datos SETJ 
+crear label y rfc - que capturara el usuario
+crear Label Numero de crédito  y su jtextfiel  - que capturara el usuario
+crear Label nombre o razon social  y su jtextfiel - que capturara el usuario
+crear Label domicilio  y su jtextfiel - que capturara el usuario
+crear Label codigo postal  y su jtextfiel - que capturara el usuario
+crear Label municipio  y su jtextfiel- que generara una lista desplegable y dicha lista deplegable se llenara bajo una busqueda en la base de datos de la tabla municipiosj que pertenezcan a dicho codig postal
+crear Label autoridad determinante y su lista desplegable- que generara una lista desplegable y dicha lista deplegable se llenara bajo una busqueda en la base de datos de la tabla AutoridadDeterminante
+crear Label fecha de recepcion y su seleccionador de fecha creado con LGoodDatePicker - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+crear Label expediente de procedencia  y su jtextfiel - que capturara el usuario
+crear Label fechadel documento determinante  y su seleccionador de fecha creado con LGoodDatePicker  - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+crear Label importe determinado  y su jtextfiel - que capturara el usuario
+crear Label fecha de notificación  y su seleccionador de fecha creado con LGoodDatePicker   - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+crear Label fecha exigible del credito  y su seleccionador de fecha creado con LGoodDatePicker  - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+crear Label tipo de notificacion  y su lista desplegable - que capturara el usuario
+crear Label tipo de credito  y su lista desplegable - lista deplegable que tendra dos opciones estatal y federal
+crear Label estatus  y su jtextfiel - sera llenado por el usuario
+crear Label fecha de estatus  y su seleccionador de fecha creado con LGoodDatePicker  - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+
+
+label que servirá como titulo y el titulo será "Captura todos los campos requeridos"
+crear Label ID y su jtextfiel
+crear label y rfc  y su jtextfiel
+crear Label Numero de crédito  y su jtextfiel
+crear Label nombre o razon social  y su jtextfiel
+crear Label domicilio y su jtextfiel
+crear Label codigo postal  y su jtextfiel
+crear Label municipio y su lista desplegable
+crear Label autoridad determinante y su lista desplegable
+crear Label fecha de recepcion y su seleccionador de fecha creado con LGoodDatePicker
+crear Label expediente de procedencia  y su jtextfiel
+crear Label fechadel documento determinante  y su seleccionador de fecha creado con LGoodDatePicker
+crear Label importe determinado  y su jtextfiel
+crear Label fecha de notificación  y su seleccionador de fecha creado con LGoodDatePicker
+crear Label fecha exigible del credito  y su seleccionador de fecha creado con LGoodDatePicker
+crear Label tipo de notificacion  y su lista desplegable
+crear Label tipo de credito  y su lista desplegable
+crear Label estatus  y su jtextfiel
+crear Label fecha de estatus  y su seleccionador de fecha creado con LGoodDatePicker 
+
+la fechas debe de tener el igueinte formato ejemplo: "29 de noviembre de 2024"

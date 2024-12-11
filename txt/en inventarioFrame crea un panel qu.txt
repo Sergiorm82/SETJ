@@ -1,0 +1,48 @@
+en inventarioFrame crea un panel que contenga 
+label  con el titulo Captura todos los campos requeridos
+id - 
+rfc - que capturara el usuario
+numero de credito  - que capturara el usuario
+nombre o razon social  - que capturara el usuario
+domicilio  - que capturara el usuario
+codigo postal  - que capturara el usuario
+municipio - que generara una lista desplegable y dicha lista deplegable se llenara bajo una busqueda en la base de datos de la tabla municipiosj que pertenezcan a dicho codig postal
+autoridad determinante - que generara una lista desplegable y dicha lista deplegable se llenara bajo una busqueda en la base de datos de la tabla AutoridadDeterminante
+fecha de recepcion - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+expediente de procedencia  - que capturara el usuario
+fechadel documento determinante  - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+importe determinado  - que capturara el usuario
+fecha de notificacion  - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+fecha exigible del credito  - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+tipo de notificacion  - lista deplegable que tendra 
+tipo de credito - lista deplegable que tendra dos opciones estatal y federal
+estatus - sera llenado por el usuario
+fecha de estatus  - sera seleccionada por el usuario pero con un calendario de java (sugiere uno)
+
+te dare un panorama mas completo:
+el campo ID de CamposPanel obtendra el siguiente consecutivo del ultimo registro en la base de datos SETJ
+
+
+el campo ID que sera tomado del siguiente consecutivo del ultimo idmovimiento encontrado en la tabla creditosfiscales de la base de datos SETJ 
+el campo RFC lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el campo Número de crédito lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el campo Nombre o razón social lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el campo domicilio lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el campo código postal lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+la lista desplegable municipio se llenara con los datos de MunicipiosJ de la base de datos SETJ, con municipios que contengan el código postal anteriormente ingresado
+lista desplegable autoridad determinante se llenara con los datos de AutoridadDeterminante de la base de datos SETJ
+el DatePicker de fecha de recepción lo seleccionara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el campo expediente de procedencia lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el DatePicker de fecha del documento determinante  lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el campo importe determinado lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el DatePicker de fecha de notificación lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el DatePicker de fecha exigible del crédito lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+lista desplegable tipo de notificación se llenara con los datos de TipoNotificacion de la base de datos SETJ
+la lista desplegable tipo de crédito  y su lista desplegablese llenara con los datos de TipoCredito de la base de datos SETJ
+el campo estatus  lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+el DatePicker de fecha de estatus  lo seleccionara el usuario pero también se podrá obtener,guardar y modificar de la base de datos 
+el campo Observaciones lo llenara el usuario pero también se podrá obtener,guardar y modificar de la base de datos
+
+la fechas debe de tener el igueinte formato ejemplo: "29 de noviembre de 2024" pero al guardarlas en la base de daytos deben tener el formato correcto para guardarlas
+
+adjunto imagen con un ejemplo muy similar 

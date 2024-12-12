@@ -6,6 +6,7 @@ import java.awt.*;
 public class BotonesAccionPanel extends RoundedPanel {
 
     private CamposPanel camposPanel;
+    private ListaCreditosPanel listaCreditosPanel;
     JButton nuevoRegistroButton, buscarCreditosButton, guardarButton, enviarButton, modificarButton, eliminarRegistroButton;
 
     public BotonesAccionPanel(CamposPanel camposPanel) {
@@ -53,4 +54,8 @@ public class BotonesAccionPanel extends RoundedPanel {
         add(enviarButton, gbc);
 
     }
+
+    
+
+   
 }
